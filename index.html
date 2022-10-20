@@ -5,15 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Builder</title>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <script src="/js/scripts.js"></script>
 </head>
 <body>
   
   <h1>Character Builder</h1>
-    <form id="character name">
-      <label for="input name">Name</label>
-      <input id="input name" type="text">
-    </form>
-    <form id="class selecter">
+
+    <form id="character-name">
+      <label for="input-name">Name</label>
+      <input id="input-name" type="text">
+
       <label>
         <input type="radio" name="class" value="fighter">
         fighter
@@ -26,8 +28,23 @@
         <input type="radio" name="class" value="wizard">
         wizard
       </label>
-      <button type="submit" class="btn">Select</button>
+      <button type="submit" class="btn">Create Character</button>
     </form>
+
+    <div class="hidden">
+      <div class="profile">
+        <h2 id="name"></h2>
+        <h3 id="charClass"></h3>
+      </div>
+      <div class="stats">
+        <h3>Strength:</h3><span id="strVal"></span>
+        <h3>Charisma:</h3><span id="chVal"></span>
+        <h3>Intelligence:</h3><span id="intVal"></span>
+      </div>
+      <div class="passives">
+        <p id="passiveTxt"></p>       
+      </div>
+    </div>
 </body>
 </html>
 
