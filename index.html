@@ -9,5 +9,51 @@
 <body>
   
   <h1>Character Builder</h1>
+    <form id="character name">
+      <label for="input name">Name</label>
+      <input id="input name" type="text">
+    </form>
+    <form id="class selecter">
+      <label>
+        <input type="radio" name="class" value="fighter">
+        fighter
+      </label>
+      <label>
+        <input type="radio" name="class" value="bard">
+        bard
+      </label> 
+      <label>
+        <input type="radio" name="class" value="wizard">
+        wizard
+      </label>
+      <button type="submit" class="btn">Select</button>
+    </form>
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- 
+stat1.addevent("submit, math)
+stat2.addevent("submit, math)
+intStat3.addevent("submit", math) 
+
+button
+
+passives:
+if (strengthValue >= 16) : "carry weight: 400lbs"
+  else if (strengthValue < 16 && strengthValue > 10): "carry weight: 300lbs"
+  else if (strengthValue <= 10): "carry weight: 200"
+
+if (charismaValue >= 16) : "Inherently Likable"
+  else if (charismaValue < 16 && charismaValue > 10): "reserved likabilty"
+  else if (charismaValue <= 10): "Not well liked."
+
+if ( intelligenceValue >= 16) : "Quick to grasp code."
+  else if (intelligenceValue < 16 && charismaValue > 10): "Needs review on code."
+  else if (intelligenceValue <= 10): "Is completely drowning in code..."
+-->
